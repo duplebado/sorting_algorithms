@@ -11,8 +11,12 @@ void move_to_pos(listint_t *node, listint_t ***list_head);
 
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *point_in_exec = (*list)->next;
-	listint_t *temp;
+	listint_t *point_in_exec, *temp;
+
+	if (!(*list))
+		return;
+
+	point_in_exec = (*list)->next;
 
 	while (point_in_exec)
 	{
