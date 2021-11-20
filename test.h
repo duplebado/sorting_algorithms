@@ -2,6 +2,7 @@
 #define __SORT_H__
 
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * struct listint_s - Doubly linked list node
  *
